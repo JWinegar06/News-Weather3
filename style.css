@@ -1,0 +1,187 @@
+/* === Base Styles === */
+body {
+    background: steelblue;
+    color: black;
+    padding: 4em;
+    font-family: sans-serif;
+    line-height: 1.15;
+  }
+
+  
+  a {
+    color: black;
+  }
+
+  
+  /* === Navigation Bar === */
+  ul {
+    max-width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightsteelblue;
+  }
+
+  
+  li {
+    float: left;
+  }
+
+  
+  li a {
+    display: block;
+    color: steelblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  
+  li a:hover:not(.active) {
+    background-color: darkblue;
+  }
+
+  
+  .active {
+    background-color: steelblue;
+  }
+
+  
+  /* === Page Layout === */
+  hr {
+    height: 6px;
+    border: none;
+  }
+
+  
+  .page {
+    padding: 2em;
+    background: lightskyblue;
+    max-width: 100%;
+  }
+
+  
+  /* === Archive Grid (Cards) === */
+  .archive {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-gap: 1em;
+    grid-auto-flow: dense;
+  }
+
+  
+  .article {
+    text-align: center;
+    padding: 1em;
+    background: lightsteelblue;
+    box-shadow: 0 5px 10px black, 0 20px 20px gray;
+  }
+
+  
+  .article img {
+    max-width: 100%;
+  }
+
+  
+  /* Special Articles (span across columns) */
+  .article:nth-child(1) {
+    grid-column: 1 / -1;
+  }
+
+  
+  .article:nth-child(8) {
+    grid-column: -3 / -1;
+  }
+
+  
+  .article:nth-child(8):after {
+    content: "grid-column: -3 / -1";
+  }
+
+  
+  /* Responsive Layout */
+  @media (max-width: 680px) {
+    .archive {
+      display: flex;
+      flex-direction: column;
+    }
+      
+    .article {
+      margin-bottom: 1em;
+    }
+  }
+
+  
+  /* === Weather Sections === */
+  .article-five-day {
+    grid-column: 1 / -1;
+    padding: 15px;
+    margin-top: 15px;
+    background-color: lightsteelblue;
+    box-shadow: 0 5px 10px black, 0 20px 20px gray;
+  }
+
+  
+  .five-day {
+    text-align: center;
+    padding: 1em;
+    background: steelblue;
+    box-shadow: 0 5px 10px lightblue, 0 20px 20px lightsteelblue;
+    grid-column: 1 / 5;
+  }
+
+  
+  .day {
+    color: #111;
+    max-width: 100px;
+    height: 125px;
+    background-color: #f9f9f9; /* Placeholder value */
+  }
+
+  
+  .five-article {
+    text-align: center;
+  }
+
+  
+  #city, #forecastTitle {
+    text-align: center;
+  }
+
+  
+  /* === Weather Data Layout === */
+  .flex {
+    display: flex;
+    justify-content: center;
+  }
+
+  
+  .flex-col {
+    text-align: center;
+    margin-right: 50px;
+  }
+
+  
+  #stats {
+    text-align: start;
+    float: left;
+  }
+
+  
+  .temp-data {
+    margin-left: 10px;
+    display: flex;
+  }
+
+  
+  .weatherIcon {
+    display: flex;
+    margin-left: 0;
+  }
+  
+  
+  /* === Footer === */
+  footer {
+    text-align: center;
+  }

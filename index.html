@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Weather App</title>
+</head>
+
+<body style="background-color: lightblue">
+  <header></header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="index.html">Weather</a></li>
+    </ul>
+  </nav>
+
+  <!-- Weather Section -->
+  <section class="weather-section">
+    <div class="page">
+      <h1>LATEST WEATHER</h1>
+      <div class="archive">
+
+        <!-- Current Weather Article -->
+        <article class="article">
+          <section id="stats">
+            <div class="summary">
+              <h2>Weather Summary</h2>
+              <h3 id="five-city">Tooele, Utah</h3>
+              <p>Currently: <span id="current-desc"></span></p>
+              <p>Temperature: <span id="current-temp"></span></p>
+              <p>Wind Chill: <span id="current-windChill"></span></p>
+              <p>Humidity: <span id="current-humid"></span></p>
+              <p>Wind Speed: <span id="current-windSpeed"></span></p>
+            </div>
+          </section>
+          <div>
+            <img src="https://media.tenor.com/hKp3PEAYOwEAAAAM/snoopy-raining.gif" alt="Stay Dry" />
+          </div>
+        </article>
+
+        <!-- 5 Day Forecast -->
+        <div class="article-five-day">
+          <article id="forecastContainer">
+            <h2 id="forecastTitle">5 Day Forecast</h2>
+            <h3 id="city">Tooele, Utah</h3>
+            <div class="flex">
+
+              <!-- Day 1 -->
+              <div class="flex-col">
+                <span id="dayTitle1" class="col-head">Day 1</span>
+                <img id="weatherIcon1" class="weatherIcon" src="https://media.tenor.com/aPamzFLB9Z8AAAAm/umbrella-rain.webp" alt="Rainy" />
+                <div class="temp-data">
+                  <span id="data1">52°F</span>
+                </div>
+              </div>
+
+              <!-- Day 2 -->
+              <div class="flex-col">
+                <span id="dayTitle2" class="col-head">Day 2</span>
+                <img id="weatherIcon2" class="weatherIcon" src="https://media.tenor.com/qqW_PLtz05kAAAAm/happy-excited.webp" alt="Rain" />
+                <div class="temp-data">
+                  <span id="data2">46°F</span>
+                </div>
+              </div>
+
+              <!-- Day 3 -->
+              <div class="flex-col">
+                <span id="dayTitle3" class="col-head">Day 3</span>
+                <img id="weatherIcon3" class="weatherIcon" src="https://media.tenor.com/h8jLsOJCDCwAAAA1/good-afternoon-sun.webp" alt="Cloudy" />
+                <div class="temp-data">
+                  <span id="data3">40°F</span>
+                </div>
+              </div>
+
+              <!-- Day 4 -->
+              <div class="flex-col">
+                <span id="dayTitle4" class="col-head">Day 4</span>
+                <img id="weatherIcon4" class="weatherIcon" src="https://media.tenor.com/gTSdCkFp7QMAAAAm/timothy-winchester-littlest-friends.webp" alt="Sunny" />
+                <div class="temp-data">
+                  <span id="data4">48°F</span>
+                </div>
+              </div>
+
+              <!-- Day 5 -->
+              <div class="flex-col">
+                <span id="dayTitle5" class="col-head">Day 5</span>
+                <img id="weatherIcon5" class="weatherIcon" src="https://media.tenor.com/G5duoOYLxyUAAAAm/seekersnotes-sun.webp" alt="Sunny" />
+                <div class="temp-data">
+                  <span id="data5">58°F</span>
+                </div>
+              </div>
+
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <main></main>
+  <footer></footer>
+
+  <!-- External JS -->
+  <script src="weather-header.js"></script>
+</body>
+</html>
