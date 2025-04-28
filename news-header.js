@@ -25,4 +25,4 @@ fetch(apiURL)
   })
   .catch(error => {
     console.error("Error fetching news:", error);
-  });
+  })
