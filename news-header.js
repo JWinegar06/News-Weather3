@@ -14,7 +14,7 @@ fetch(apiURL)
       document.getElementById("header-desc").textContent = articles[0].description || "";
     }
 
-    // Loop through next 4 articles (if available)
+    // Loop through next 4 articles 
     for (let i = 1; i <= 4 && i < articles.length; i++) {
       const article = articles[i];
       document.getElementById(`article-img-${i}`).src = article.urlToImage || "";
